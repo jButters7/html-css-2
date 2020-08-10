@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 500vh;
+    padding-top: 20vh
+}
+
+.header{
+    background-color: tomato;
+    width: 100vh;
+    height: 20vh;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.relative-div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    top: 25px;
+    left: 10px;
+
+}
+
+.fixed-image{
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.absolute-parent{
+    width:150px;
+    height: 150px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.absolute-div{
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+    position: absolute;
+    top: 15px;
+    right: 10px
+}
+
+.sticky-div{
+    width: 50vw;
+    height: 5vw;
+    background-color: lawngreen;
+    position: sticky;
+    top: 20vh;
+    z-index: 1;
+}
+
+.overlay-parent{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    padding: 15px;
+    position: relative;
+}
+
+.overlay-child{
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-child:hover{
+    background-color: gray;
+}
+
+.flex-container{
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: column: row-reverse, row, column-reverse */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+    min-height: 200px;
+    padding: 10px;
+    align-items: center;
+}
+
+.flex-child{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.overflow-container{
+    height: 150px;
+    width: 25vw;
+    border: 1px dashed black;
+    margin: 25px;
+    overflow: auto;
+}
